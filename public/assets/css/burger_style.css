@@ -1,0 +1,40 @@
+.bistro {
+    background-color: wheat
+}
+
+#jumbo {
+    background-image: url("../img/Burger-pattern-seamless-vector-02.jpg");
+    background-size: cover;
+    opacity: .5;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#change-devoured{
+    color: whitesmoke;
+    font-family: 'Paytone One', sans-serif;
+  }
+  
+  #submit{
+    background-color: khaki
+  }
+  
+  #name, #eaten, #burgername{
+    color: brown;
+    font-family: 'Paytone One', sans-serif;
+  }
+
+  .col-md-12 {
+    color: brown;
+    font-family: 'Paytone One', sans-serif;
+  }
+  
+li {
+    padding: 3px;
+    margin: 3px;
+    font-size: 20px;
+    background: tan;
+    color: darkgreen;
+    font-family: 'Sarabun', sans-serif;
+  }
