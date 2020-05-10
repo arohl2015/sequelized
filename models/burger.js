@@ -1,21 +1,14 @@
 module.exports = function(sequelize, DataTypes) {
   var burger = sequelize.define("burger", {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-      allowNull: false
-    },
     burger_name: {
       type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
+      // len is a validation that checks that our burger_name is between 1 and 150 characters
+        validate: {
         len: [1, 150]
       }
     },
     devoured: {
       type: DataTypes.BOOLEAN,
-      allowNull: false,
       defaultValue: false
     }
   });
