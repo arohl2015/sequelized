@@ -22,7 +22,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // adding routes
-require("./routes/api-routes.js")(app);
+require("./controllers/burgers_controller")(app);
 
 // Syncing to sequelize models and starting the Express app
 db.sequelize.sync().then(function() {

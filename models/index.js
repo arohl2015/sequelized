@@ -1,3 +1,4 @@
+//file created by running sequelize init:models
 'use strict';
 
 const fs = require('fs');
