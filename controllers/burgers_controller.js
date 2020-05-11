@@ -33,17 +33,18 @@ app.post("/api/burgers", function(req, res) {
 });
 //updating burger to devoured
 app.put("/api/burgers/:id", function(req, res) {
-
   db.burger.update({
-    
+    devoured: true
   },
     {
       where: {
         id: req.params.id
       }
     })
-    .then(function(results) {
-      res.json(results);
-    });
+    .then(function(result, err) {
+      res.json(result);
+      if (err) {
+        console.log(err)
+      }
 });
-};
+})};
